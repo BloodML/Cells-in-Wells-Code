@@ -1,7 +1,9 @@
 ﻿# Cells-in-Wells-Code
 
 ## Introduction
-This repository contains the code and trained neural networks that were used to create the ["Cells-in-Wells" (CIW) dataset](https://doi.org/10.18738/T8/PSQKWF), which is composed of images, videos, binary masks, bounding boxes, morphology labels, cell tracking data, and other metrics of red blood cells (RBCs) in microfluidic wells undergoing washing in human serum albumin, saline, or autologous storage medium.  What follows is a conceptual overview and a brief tutorial on how to use the code.
+This repository contains the code and trained neural networks that were used to create the ["Cells-in-Wells" (CIW) dataset](https://doi.org/10.18738/T8/PSQKWF), which is composed of images, videos, binary masks, bounding boxes, morphology labels, cell tracking data, and other metrics of red blood cells (RBCs) in microfluidic wells undergoing washing in human serum albumin, saline, or autologous storage medium.  
+![RBCs in wells](https://github.com/BloodML/Cells-in-Wells-Code/blob/main/Donor%204/HSA/1/image_000001.png?raw=true)
+What follows is a conceptual overview and a brief tutorial on how to use the code.
 
 ## Conceptual Overview
 ![The pipeline.](https://raw.githubusercontent.com/BloodML/Cells-in-Wells-Code/main/WorkflowDiagram.svg)
@@ -39,6 +41,10 @@ The CIW dataset has the donor data in multivolume zip files, where Donor # #####
 5. Repeat this process using the **Routt_Austin_CIW_Processing_Main.m** script and the **Preprocessed Data**. 
 	- Open the script, uncomment lines 19 & 20, and press **play**.
 6. Check the **Processed Data** folder for individual RBC tracking data and well videos.
+![example 1](https://github.com/BloodML/Cells-in-Wells-Code/blob/main/SupFig15.gif?raw=true)
+![example 2](https://github.com/BloodML/Cells-in-Wells-Code/blob/main/SupFig16.gif?raw=true)
+
+![example 3](https://github.com/BloodML/Cells-in-Wells-Code/blob/main/SupFig17.gif?raw=true)
 
 ## References
 
