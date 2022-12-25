@@ -65,9 +65,9 @@ label = categorical({'D','E1','E2','E3','S','SE','ST'});
 
 %Define directory addresses
 baseImportDir = "";
-baseExportDir ='Retrained';
+baseExportDir ='Preprocessed Data';
 %Define lists of donor, wash, and run folders
-donors = {'Donor 1'};
+donors = {'Donor 4'};
 washes = {'HSA'};
 folder = '1';
 
@@ -106,7 +106,7 @@ for donor = donors
 
 
         %Create an image datastore for the image set
-        imds = imageDatastore(dirImport, "IncludeSubfolders",false, "FileExtensions",'.tif');
+        imds = imageDatastore(dirImport, "IncludeSubfolders",false);
 
 
 
